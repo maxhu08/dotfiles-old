@@ -6,6 +6,7 @@
     "clock",
     "custom/separator",
     "hyprland/workspaces",
+    "custom/separator",
     "tray"
   ],
   "modules-center": [
@@ -69,7 +70,7 @@
     "tooltip": "false"
   },
   "pulseaudio": {
-    "format": " {volume}% ",
+    "format": " {volume}%",
     "scroll-step": 1,
     "on-click": "pavucontrol"
   },
