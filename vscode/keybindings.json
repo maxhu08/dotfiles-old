@@ -1,0 +1,37 @@
+// * keybinds to make vim easier *
+
+[
+  // move up and down in suggestions box
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  },
+  // move up and down in quick fix box
+  {
+    "key": "ctrl+j",
+    "command": "selectNextCodeAction",
+    "when": "editorFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevCodeAction",
+    "when": "editorFocus && !suggestWidgetVisible"
+  },
+  // move up and down in quick open file box
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenNavigatePrevious",
+    "when": "inQuickOpen"
+  }
+]
