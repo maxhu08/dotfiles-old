@@ -1,0 +1,114 @@
+# custom greeting
+set fish_greeting (set_color --bold efcf40)">"(set_color ef9540)"<"(set_color ea3838)">" (set_color normal)"welcome to fish, the friendly interactive shell
+type `help` to get started
+"
+
+function fish_user_key_bindings
+  fish_vi_key_bindings
+
+  # set kj to <Esc>
+  bind -M insert -m default kj backward-char force-repaint
+end
+
+# remove default clock
+function fish_right_prompt
+  echo (set_color d4d4d4)"$USER"@(hostname)
+end
+
+# indicator for vi
+function fish_mode_prompt
+  switch "$fish_bind_mode"
+    case "default"
+      echo -n (set_color f43f5e)"𝓷"
+    case "insert"
+      echo -n (set_color 84cc16)"𝒾"
+    case "visual"
+      echo -n (set_color 8b5cf6)"𝓿"
+    case "*"
+      echo -n "?"
+   end
+
+  echo -n " "
+end
+
+# custom prompt
+function fish_prompt
+  set_color --bold 4086ef
+
+  set transformed_pwd (prompt_pwd | string replace -r "^~" (set_color --bold 06b6d4)"~"(set_color --bold 1d4ed8))
+
+  echo -n $transformed_pwd
+
+  # git branch  
+  if git rev-parse --is-inside-work-tree >/dev/null 2>&1
+    #space
+    echo -n " "
+
+    echo -n (set_color --bold 4338ca)"("
+
+    set_color f0abfc
+    echo -n (git branch --show-current)
+
+    echo -n (set_color --bold 4338ca)")"
+    set_color normal
+  end
+
+  # space
+  echo -n " "
+
+  # arrows
+  # echo -n (set_color --bold efcf40)"❱"
+  # echo -n (set_color --bold ef9540)"❱"
+  # echo -n (set_color --bold ea3838)"❱"
+  
+  echo -n (set_color --bold 14b8a6)"→"
+  
+  #space
+  echo -n " "
+
+  set_color normal
+end
+
+# set environment variables
+set -x PATH $PATH:/usr/local/bin:/opt/bin
+
+# aliases
+alias cls "clear" # clear
+
+# set editor
+set -x EDITOR "code"
+
+# TokyoNight Color Palette from https://github.com/folke/tokyonight.nvim/blob/main/extras/fish/tokyonight_storm.fish
+set -l foreground c0caf5
+set -l selection 2e3c64
+set -l comment 565f89
+set -l red f7768e
+set -l orange ff9e64
+set -l yellow e0af68
+set -l green 9ece6a
+set -l purple 9d7cd8
+set -l cyan 7dcfff
+set -l pink bb9af7
+
+# Syntax Highlighting Colors
+set -g fish_color_normal $foreground
+set -g fish_color_command $cyan
+set -g fish_color_keyword $pink
+set -g fish_color_quote $yellow
+set -g fish_color_redirection $foreground
+set -g fish_color_end $orange
+set -g fish_color_error $red
+set -g fish_color_param $purple
+set -g fish_color_comment $comment
+set -g fish_color_selection --background=$selection
+set -g fish_color_search_match --background=$selection
+set -g fish_color_operator $green
+set -g fish_color_escape $pink
+set -g fish_color_autosuggestion $comment
+
+# Completion Pager Colors
+set -g fish_pager_color_progress $comment
+set -g fish_pager_color_prefix $cyan
+set -g fish_pager_color_completion $foreground
+set -g fish_pager_color_description $comment
+set -g fish_pager_color_selected_background --background=$selection
