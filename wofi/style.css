@@ -14,6 +14,7 @@ window {
 #input {
   background-color: #262626;
   outline: none;
+  box-shadow: none;
   border: 0;
   border-radius: 0;
   font-size: 1rem;
