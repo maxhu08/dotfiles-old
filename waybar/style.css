@@ -15,10 +15,15 @@
   padding-left: 2px;
 }
 
+#workspaces button:hover {
+  background-color: transparent;
+}
+
 #workspaces button {
   color: #737373;
   padding-left: 2px;
   padding-right: 2px;
+  border: none;
 }
 
 #workspaces button.active {
