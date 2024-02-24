@@ -83,7 +83,7 @@ set -l foreground c0caf5
 # changed from default
 set -l selection 6366f1
 # changed from default
-set -l comment 404040
+set -l comment 737373
 set -l red f7768e
 set -l orange ff9e64
 set -l yellow e0af68
@@ -114,3 +114,4 @@ set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 set -g fish_pager_color_selected_background --background=$selection
+
