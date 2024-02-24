@@ -76,7 +76,11 @@ set -x PATH $PATH:/usr/local/bin:/opt/bin
 set -x EDITOR "code"
 
 # for hyprland
-set -x WLR_NO_HARDWARE_CURSORS 1 
+set -x WLR_NO_HARDWARE_CURSORS 1
+
+# use wayland
+set -x GDK_BACKEND wayland
+set -x QT_QPA_PLATFORM wayland
 
 # TokyoNight Color Palette from https://github.com/folke/tokyonight.nvim/blob/main/extras/fish/tokyonight_storm.fish
 set -l foreground c0caf5
