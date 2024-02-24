@@ -12,7 +12,7 @@ end
 
 # remove default clock
 function fish_right_prompt
-  echo (set_color d4d4d4)"$USER"@(hostname)
+  echo (set_color e5e5e5)"$USER"@(hostname)
 end
 
 # indicator for vi
@@ -72,16 +72,18 @@ end
 # set environment variables
 set -x PATH $PATH:/usr/local/bin:/opt/bin
 
-# aliases
-alias cls "clear" # clear
-
 # set editor
 set -x EDITOR "code"
 
+# for hyprland
+set -x WLR_NO_HARDWARE_CURSORS 1 
+
 # TokyoNight Color Palette from https://github.com/folke/tokyonight.nvim/blob/main/extras/fish/tokyonight_storm.fish
 set -l foreground c0caf5
-set -l selection 2e3c64
-set -l comment 565f89
+# changed from default
+set -l selection 6366f1
+# changed from default
+set -l comment 404040
 set -l red f7768e
 set -l orange ff9e64
 set -l yellow e0af68
