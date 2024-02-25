@@ -1,13 +1,3 @@
 # dotfiles
 
-packages
-
-| app              | package  |
-| ---------------- | -------- |
-| terminal         | kitty    |
-| shell            | fish     |
-| wm/de/compositor | hyprland |
-| taskbar          | waybar   |
-| app launcer      | wofi     |
-| editor           | vscode   |
-| file manager     | pcmanfm  |
+check out https://maxhu.dev/dotfiles for more info
