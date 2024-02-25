@@ -36,4 +36,5 @@ window {
 
 #entry:selected {
   background-color: #262626;
+  outline: none;
 }
