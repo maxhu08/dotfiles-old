@@ -12,7 +12,7 @@
 }
 
 #tray {
-  padding-left: 4px;
+  padding-left: 2px;
 }
 
 #workspaces button:hover {
@@ -21,13 +21,9 @@
 
 #workspaces button {
   color: #737373;
-  padding-left: 4px;
-  padding-right: 4px;
-  border-radius: 0px;
-}
-
-#workspaces button:hover {
-  background-color: #262626;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
 }
 
 #workspaces button.active {

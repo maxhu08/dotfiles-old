@@ -13,12 +13,12 @@
     "hyprland/window"
   ],
   "modules-right": [
+    "network",
     "temperature",
     "memory",
     "cpu",
     "pulseaudio",
     "battery",
-    "network",
     "custom/separator",
     "custom/powermenu"
   ],
@@ -31,10 +31,7 @@
     "spacing": 8
   },
   "clock": {
-    // 24 hour
-    // "format": " {:%H:%M} ",
-    // 12 hour
-    "format": " 󰸗 {:%I:%M %p} ",
+    "format": " {:%H:%M} ",
     "interval": 60,
     "tooltip": true,
     "tooltip-format": "{:%d %B %H:%M}"
@@ -49,9 +46,9 @@
     "format": "{}"
   },
   "network": {
-    "format": " 󰖩",
-    // "tooltip": "{ifname}",
-    "tooltip-format": "{essid}",
+    "format": "󰖩 ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "interface": "enp34s0",
     "interval": 2
   },
   "temperature": {
@@ -65,7 +62,7 @@
     ]
   },
   "memory": {
-    "format": "󰫗 {}% ",
+    "format": "󰍛 {}% ",
     "tooltip": "false"
   },
   "cpu": {
