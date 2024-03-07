@@ -1,4 +1,4 @@
-# dotfiles-alpha
+# dotfiles
 
 see https://maxhu.dev/dotfiles/alpha for install guide
 
