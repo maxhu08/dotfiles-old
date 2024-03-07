@@ -35,7 +35,7 @@ end
 function fish_prompt
   set_color --bold 4086ef
 
-  set transformed_pwd (prompt_pwd | string replace -r "^~" (set_color --bold 06b6d4)"~"(set_color --bold 1d4ed8))
+  set transformed_pwd (prompt_pwd | string replace -r "^~" (set_color --bold 06b6d4)"~"(set_color --bold 3b82f6))
 
   echo -n $transformed_pwd
 
@@ -78,9 +78,12 @@ set -x EDITOR "code"
 # for hyprland
 set -x WLR_NO_HARDWARE_CURSORS 1
 
-# use wayland
+# wayland
 set -x GDK_BACKEND wayland
 set -x QT_QPA_PLATFORM wayland
+
+alias treelist "tree -a -I '.git'"
+alias fetch "fastfetch --localip-show-ipv4 false"
 
 # TokyoNight Color Palette from https://github.com/folke/tokyonight.nvim/blob/main/extras/fish/tokyonight_storm.fish
 set -l foreground c0caf5
