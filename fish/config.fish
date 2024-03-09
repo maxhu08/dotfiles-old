@@ -82,6 +82,7 @@ set -x WLR_NO_HARDWARE_CURSORS 1
 set -x GDK_BACKEND wayland
 set -x QT_QPA_PLATFORM wayland
 
+alias ls "exa --icons"
 alias treelist "tree -a -I '.git'"
 alias fetch "fastfetch --localip-show-ipv4 false"
 
