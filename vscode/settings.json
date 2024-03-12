@@ -6,6 +6,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
+  "editor.stickyScroll.enabled": false,
   "editor.codeActionsOnSave": {},
   "editor.quickSuggestions": { "strings": true },
   "editor.minimap.enabled": false,
@@ -29,15 +30,18 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[java]": {
-    "editor.defaultFormatter": "mwpb.java-prettier-formatter"
-  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma",
     "editor.formatOnSave": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
 
   // * prettier settings *
@@ -51,9 +55,6 @@
   // * live Server settings *
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
-
-  // * workbench settings *
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
 
@@ -61,10 +62,11 @@
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.defaultProfile.windows": "fish",
   "terminal.integrated.smoothScrolling": false,
+  "terminal.integrated.fontFamily": "Fira Code",
 
   // * vim *
   "vim.useSystemClipboard": true,
-  "vim.leader": " ",
+  "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [
     {
       // vim quick normal mode
@@ -124,6 +126,13 @@
   "window.zoomLevel": 2,
   "cmake.configureOnOpen": false,
   "cmake.showOptionsMovedNotification": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
   "explorer.confirmDragAndDrop": false,
-  "workbench.statusBar.visible": false
+  "git.ignoreRebaseWarning": true,
+  "window.customTitleBarVisibility": "auto",
+  "workbench.statusBar.visible": false,
+  "explorer.confirmDelete": false
 }
