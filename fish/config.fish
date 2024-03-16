@@ -82,6 +82,12 @@ set -x WLR_NO_HARDWARE_CURSORS 1
 set -x GDK_BACKEND wayland
 set -x QT_QPA_PLATFORM wayland
 
+# fzf
+export FZF_DEFAULT_OPTS="
+--bind='ctrl-j:down,ctrl-k:up,ctrl-t:toggle-all,ctrl-v:toggle-preview,ctrl-space:toggle-preview'
+--color=fg:#ffffff,hl:#00ff00,fg+:#a5b4fc,bg+:#737373,hl+:#ffff00,info:#14b8a6,spinner:#00ffff,pointer:#f59e0b
+"
+
 alias ls "exa --icons"
 alias treelist "tree -a -I '.git'"
 alias fetch "fastfetch --localip-show-ipv4 false"
@@ -122,4 +128,8 @@ set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 set -g fish_pager_color_selected_background --background=$selection
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
 
