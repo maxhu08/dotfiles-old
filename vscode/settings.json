@@ -16,6 +16,8 @@
   "editor.wordWrapColumn": 500,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.formatOnSave": true,
+  "window.titleBarStyle": "custom",
+  "window.customTitleBarVisibility": "never",
 
   // * file explorer settings *
   "files.exclude": {
@@ -62,7 +64,7 @@
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.defaultProfile.windows": "fish",
   "terminal.integrated.smoothScrolling": false,
-  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "Fira Code, DejaVu Math TeX Gyre",
 
   // * vim *
   "vim.useSystemClipboard": true,
@@ -119,7 +121,6 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   "vscode_vibrancy.opacity": 0.1,
   "npm.keybindingsChangedWarningShown": true,
-  "window.titleBarStyle": "custom",
   "redhat.telemetry.enabled": false,
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "svg.preview.mode": "img",
@@ -132,7 +133,6 @@
   "git.confirmSync": false,
   "explorer.confirmDragAndDrop": false,
   "git.ignoreRebaseWarning": true,
-  "window.customTitleBarVisibility": "auto",
   "workbench.statusBar.visible": false,
   "explorer.confirmDelete": false
 }
