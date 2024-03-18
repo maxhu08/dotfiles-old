@@ -1,7 +1,9 @@
 # custom greeting
-set fish_greeting (set_color --bold efcf40)">"(set_color ef9540)"<"(set_color ea3838)">" (set_color normal)"welcome to fish, the friendly interactive shell
-type `help` to get started
-"
+set KERNEL (uname -r)
+set fish_greeting (set_color --bold efcf40)">"(set_color ef9540)"<"(set_color ea3838)">" \
+  (set_color normal)"fish $FISH_VERSION" \
+  (set_color normal)"| $KERNEL
+  "
 
 function fish_user_key_bindings
   fish_vi_key_bindings
