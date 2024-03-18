@@ -10,8 +10,3 @@ vim.keymap.set("n", "S", ":normal! 0D^<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { noremap = true, silent = true })
 -- K to move the current line up
 vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { noremap = true, silent = true })
-
-local Util = require("lazyvim.util")
-vim.keymap.set("n", "<C-/>", function()
-  Util.terminal(nil, { border = "rounded" })
-end, { desc = "Term with border" })
