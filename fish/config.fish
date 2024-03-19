@@ -135,3 +135,10 @@ set -g fish_pager_color_selected_background --background=$selection
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
+# pnpm
+set -gx PNPM_HOME "/home/mh/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
