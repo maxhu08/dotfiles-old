@@ -1,7 +1,9 @@
 # custom greeting
-set fish_greeting (set_color --bold efcf40)">"(set_color ef9540)"<"(set_color ea3838)">" (set_color normal)"welcome to fish, the friendly interactive shell
-type `help` to get started
-"
+set KERNEL (uname -r)
+set fish_greeting (set_color --bold efcf40)">"(set_color ef9540)"<"(set_color ea3838)">" \
+  (set_color normal)"fish $FISH_VERSION" \
+  (set_color normal)"| $KERNEL
+  "
 
 function fish_user_key_bindings
   fish_vi_key_bindings
@@ -82,6 +84,12 @@ set -x WLR_NO_HARDWARE_CURSORS 1
 set -x GDK_BACKEND wayland
 set -x QT_QPA_PLATFORM wayland
 
+# fzf
+export FZF_DEFAULT_OPTS="
+--bind='ctrl-j:down,ctrl-k:up,ctrl-t:toggle-all,ctrl-v:toggle-preview,ctrl-space:toggle-preview'
+--color=fg:#ffffff,hl:#00ff00,fg+:#a5b4fc,bg+:#737373,hl+:#ffff00,info:#14b8a6,spinner:#00ffff,pointer:#f59e0b
+"
+
 alias ls "exa --icons"
 alias treelist "tree -a -I '.git'"
 alias fetch "fastfetch --localip-show-ipv4 false"
@@ -122,4 +130,15 @@ set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 set -g fish_pager_color_selected_background --background=$selection
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# pnpm
+set -gx PNPM_HOME "/home/mh/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
 

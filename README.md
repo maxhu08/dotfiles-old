@@ -2,6 +2,10 @@
 
 see https://maxhu.dev/dotfiles/alpha for install guide
 
+```
+cp -r ~/.config/nvim ~/programming/personal/dotfiles
+```
+
 some pics:
 
 ![image-1](./screenshots/1.png)
