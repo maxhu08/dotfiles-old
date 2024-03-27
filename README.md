@@ -1,6 +1,6 @@
 # dotfiles
 
-see https://maxhu.dev/dotfiles/alpha for install guide
+see https://maxhu.dev/dotfiles for more info
 
 ```
 cp -r ~/.config/nvim ~/programming/personal/dotfiles
