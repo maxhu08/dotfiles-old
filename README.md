@@ -1,12 +1,10 @@
 # dotfiles
 
-see https://maxhu.dev/dotfiles for more info
-
-```
-cp -r ~/.config/nvim ~/programming/personal/dotfiles
-```
+see https://maxhu.dev/dotfiles for more info and how to setup
 
 some pics:
+
+![gruvbox](./screenshots/gruvbox.png)
 
 ![image-1](./screenshots/1.png)
 
