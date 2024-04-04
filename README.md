@@ -1,10 +1,6 @@
 # dotfiles
 
-see https://maxhu.dev/dotfiles for more info
-
-```
-cp -r ~/.config/nvim ~/programming/personal/dotfiles
-```
+see https://maxhu.dev/dotfiles for more info and how to setup
 
 some pics:
 
