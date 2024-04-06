@@ -2,6 +2,8 @@
 
 see https://maxhu.dev/dotfiles for more info and how to setup
 
+nvim config is outdated see https://github.com/maxhu08/neovim-zen for my lateset neovim setup
+
 some pics:
 
 ![gruvbox](./screenshots/gruvbox.png)
