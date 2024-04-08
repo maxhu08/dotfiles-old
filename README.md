@@ -1,8 +1,17 @@
 # dotfiles
 
-see https://maxhu.dev/dotfiles for more info and how to setup
+I put my neovim & tmux config in a separate repo.  
 
-nvim config is outdated see https://github.com/maxhu08/neovim-zen for my lateset neovim setup
+See below for the latest version of my neovim & tmux setup:
+
+neovim: 
+- https://github.com/maxhu08/neovim-zen
+- https://maxhu.dev/neovim-zen
+
+tmux:
+- https://github.com/maxhu08/tmux-zen
+- https://maxhu.dev/tmux-zen
+
 
 some pics:
 
