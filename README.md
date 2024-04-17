@@ -1,8 +1,18 @@
 # dotfiles
 
+## info
+
 see https://maxhu.dev/dotfiles for more info and how to setup
 
-some pics:
+dotfiles for each setup can be found by switching branches
+
+current branches:
+
+- hyprland-dots
+
+# showcase
+
+some pics (hyprland-dots):
 
 ![gruvbox](./screenshots/gruvbox.png)
 
