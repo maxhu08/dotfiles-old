@@ -8,9 +8,9 @@ dotfiles for each setup can be found by switching branches
 
 current branches:
 
-- hyprland-dots
+- `hyprland-dots`
 
-# showcase
+## showcase
 
 some pics (hyprland-dots):
 
