@@ -57,7 +57,12 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+
+-- rice
 beautiful.useless_gap = 6
+beautiful.border_width = 2
+beautiful.border_focus = "#f472b6"
+beautiful.border_normal = "#fdf2f8"
 
 terminal = "kitty"
 editor = os.getenv("EDITOR") or "nano"
