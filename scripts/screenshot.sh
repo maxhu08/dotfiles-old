@@ -9,4 +9,4 @@ mkdir -p "$screenshots_dir"
 filename="$screenshots_dir/SS$(date +%Y-%m-%d_%H-%M-%S).png"
 
 # make sure to check monitor with `xrandr --listmonitors`
-scrot --monitor "0" "$filename"
+scrot --monitor "1" "$filename"
