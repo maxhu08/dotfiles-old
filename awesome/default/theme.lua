@@ -15,16 +15,16 @@ theme.font                                      = "Fira Code NerdFont 12"
 
 theme.wallpaper                                 = "~/Pictures/wallpapers/planet_ocean_wall.jpg"
 
-theme.bg_normal                                 = "#222222"
-theme.bg_focus                                  = "#535d6c"
-theme.bg_urgent                                 = "#ff0000"
-theme.bg_minimize                               = "#444444"
+theme.bg_normal                                 = "#1a1b26"
+theme.bg_focus                                  = "#24283b"
+theme.bg_urgent                                 = "#ff007c"
+theme.bg_minimize                               = "#131521"
 theme.bg_systray                                = theme.bg_normal
 
-theme.fg_normal                                 = "#aaaaaa"
-theme.fg_focus                                  = "#ffffff"
-theme.fg_urgent                                 = "#ffffff"
-theme.fg_minimize                               = "#ffffff"
+theme.fg_normal                                 = "#c0caf5"
+theme.fg_focus                                  = "#ffc777"
+theme.fg_urgent                                 = "#c0caf5"
+theme.fg_minimize                               = "#c0caf5"
 
 theme.useless_gap                               = dpi(6)
 theme.border_width                              = dpi(2)
@@ -46,12 +46,15 @@ theme.border_marked                             = "#00ff00"
 --theme.taglist_bg_focus = "#ff0000"
 
 -- Generate taglist squares:
+
 local taglist_square_size                       = dpi(4)
+local taglist_color                             = "#ff9e64"
+
 theme.taglist_squares_sel                       = theme_assets.taglist_squares_sel(
-    taglist_square_size, theme.fg_normal
+    taglist_square_size, taglist_color
 )
 theme.taglist_squares_unsel                     = theme_assets.taglist_squares_unsel(
-    taglist_square_size, theme.fg_normal
+    taglist_square_size, taglist_color
 )
 
 -- Variables set for theming notifications:
@@ -121,7 +124,7 @@ theme.layout_cornerse                           = themes_path .. "default/layout
 
 -- Generate Awesome icon:
 theme.awesome_icon                              = theme_assets.awesome_icon(
-    theme.menu_height, theme.bg_focus, theme.fg_focus
+    theme.menu_height, "#41a6b5", theme.bg_focus
 )
 
 -- Define the icon theme for application icons. If not set then the icons
