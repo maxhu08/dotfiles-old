@@ -11,7 +11,7 @@ configuration {
   font: "Fira Code NerdFont 14";
 
   drun {
-    display-name: "=>";
+    display-name: "";
   }
 
   run {
@@ -35,8 +35,8 @@ configuration {
 
   bg: #1a1b26;
   bg-alt: #232433;
-  fg: #dbeafe;
-  fg-alt: #bef264;
+  fg: #71717a;
+  fg-alt: #ffffff;
 
   background-color: @bg;
   text-color: @fg;
@@ -46,7 +46,7 @@ window {
   transparency: "real";
   width: 700px;
   border: 2px;
-  border-color: #bef264;
+  border-color: #f472b6;
 }
 
 mainbox {
@@ -61,11 +61,13 @@ inputbar {
 entry {
   background-color: inherit;
   padding: 12px 3px;
+  text-color: @fg-alt;
 }
 
 prompt {
   background-color: inherit;
   padding: 12px;
+  text-color: @fg-alt;
 }
 
 listview {
