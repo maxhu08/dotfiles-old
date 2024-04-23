@@ -1,0 +1,21 @@
+configuration {
+  modi: ["drun", "window", "run"];
+  font: "Fira Code 24";
+  disable-history: false;
+  
+  // vim keybindings
+  kb-row-up: "Up,Control+k";
+  kb-row-left: "Left,Control+h";
+  kb-row-right: "Right,Control+l";
+  kb-row-down: "Down,Control+j";
+
+  kb-accept-entry: "Control+z,Control+y,Return,KP_Enter";
+
+  kb-remove-to-eol: "";
+  kb-move-char-back: "Control+b";
+  kb-remove-char-back: "BackSpace";
+  kb-move-char-forward: "Control+f";
+  kb-mode-complete: "Control+o";
+}
+
+@theme "~/.config/rofi/tokyonight.rasi"

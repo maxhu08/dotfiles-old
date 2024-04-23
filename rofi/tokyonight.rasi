@@ -1,0 +1,90 @@
+/*
+ * ROFI color theme
+ *
+ * Based on Something Found in the Internet
+ *
+ * User: Contributors
+ * Copyright: *!
+ */
+
+configuration {
+  font: "Fira Code NerdFont 14";
+
+  drun {
+    display-name: "=>";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: #1a1b26;
+  bg-alt: #232433;
+  fg: #dbeafe;
+  fg-alt: #bef264;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+  width: 700px;
+  border: 2px;
+  border-color: #bef264;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  background-color: @bg-alt;
+  children: [prompt, entry];
+}
+
+entry {
+  background-color: inherit;
+  padding: 12px 3px;
+}
+
+prompt {
+  background-color: inherit;
+  padding: 12px;
+}
+
+listview {
+  lines: 8;
+}
+
+element {
+  children: [element-icon, element-text];
+}
+
+element-icon {
+  padding: 10px 10px;
+  size: 48px;
+}
+
+element-text {
+  padding: 24px 0;
+}
+
+element-text selected {
+  text-color: @fg-alt;
+} 
