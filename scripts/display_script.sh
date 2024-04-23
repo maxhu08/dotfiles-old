@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # goes in ~/Dev/scripts/display_script.sh
 
 xrandr --output DP-2 --mode 1920x1080 --pos 0x0 --rate 165 --primary
