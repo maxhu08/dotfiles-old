@@ -9,6 +9,7 @@ dotfiles for each setup can be found by switching branches
 current branches:
 
 - `hyprland-dots`
+- `awesome-dots`
 
 ## extra-info
 
