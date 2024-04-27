@@ -20,8 +20,11 @@ tmux:
     - https://github.com/maxhu08/tmux-zen
     - https://maxhu.dev/tmux-zen
 
+## showcase
+
+![showcase](./screenshots/showcase.png)
+
 ```
 cp -r ~/.config/awesome/* ~/Dev/dotfiles/awesome/
 
 ```
-
