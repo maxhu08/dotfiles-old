@@ -1,8 +1,12 @@
 # dotfiles
 
+## info
+
 I put my neovim & tmux config in a separate repo.
 
 See below for the latest version of my neovim & tmux setup:
+
+## extra-info
 
 neovim:
 
@@ -14,7 +18,7 @@ tmux:
 - https://github.com/maxhu08/tmux-zen
 - https://maxhu.dev/tmux-zen
 
-some pics:
+## showcase
 
 ![gruvbox](./screenshots/gruvbox.png)
 
