@@ -40,3 +40,7 @@ some pics (hyprland-dots):
 ![image-3](./screenshots/3.png)
 
 ![image-4](./screenshots/4.png)
+
+## star history
+
+[![Star History Chart](https://api.star-history.com/svg?repos=maxhu08/dotfiles&type=Date)](https://star-history.com/#maxhu08/dotfiles&Date)
