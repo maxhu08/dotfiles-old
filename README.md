@@ -1,4 +1,6 @@
-# dotfiles
+# dotfiles-old
+
+> **WARNING** These are my old dotfiles which are not managed with gnu stow. To see my new dotfiles which use gnu stow, check out https://github.com/maxhu08/dotfiles
 
 ## info
 
@@ -10,6 +12,7 @@ current branches:
 
 - `hyprland-dots`
 - `awesome-dots`
+- `dwm-dots`
 
 ## extra-info
 
