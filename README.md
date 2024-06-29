@@ -46,4 +46,4 @@ some pics (hyprland-dots):
 
 ## star history
 
-[![Star History Chart](https://api.star-history.com/svg?repos=maxhu08/dotfiles&type=Date)](https://star-history.com/#maxhu08/dotfiles&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=maxhu08/dotfiles-old&type=Date)](https://star-history.com/#maxhu08/dotfiles-old&Date)
